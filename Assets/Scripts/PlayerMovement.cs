@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
+    private float speed = 3f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
     public Rigidbody2D rb;
+    public Animator animator;
     public Transform groundCheck;
     public LayerMask groundLayer;
     
@@ -21,7 +22,9 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        horizontal = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxisRaw("Horizontal") * speed;
+
+        animator.SetFloat("speed", Mathf.Abs(horizontal));
         
         if (Input.GetButtonDown("Jump") && isGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
