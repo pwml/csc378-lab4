@@ -1844,6 +1844,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4146668746456060442, guid: 0ed930cb6d4b74d6d8ea4275ffe6cd5a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146668746456060442, guid: 0ed930cb6d4b74d6d8ea4275ffe6cd5a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4146668746456060443, guid: 0ed930cb6d4b74d6d8ea4275ffe6cd5a, type: 3}
       propertyPath: m_Name
       value: Appletree_Short
