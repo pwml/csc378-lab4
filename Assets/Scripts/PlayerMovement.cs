@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,14 +28,24 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetButtonDown("Jump") && isGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            animator.SetBool("isJumping", true);
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f){
-           rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f); 
+        // if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f){
+        //    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        //    animator.SetBool("isJumping", false);
+        // }
+
+        if (!isGrounded()){
+            animator.SetBool("isJumping", false);
         }
 
         flip();
     }
+
+    // public void OnLanding(){
+    //     animator.SetBool("isJumping", false);
+    // }
 
     private void FixedUpdate(){
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
