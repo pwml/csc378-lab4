@@ -67,8 +67,6 @@ public class Dialogue : MonoBehaviour
         //reset the character index
         charIndex = 0;
         //clear the dialogue component text
-        charIndex = 0;
-        //clear the dialogue component text
         dialogueText.text = string.Empty;
         //start writing
         StartCoroutine(Writing());
