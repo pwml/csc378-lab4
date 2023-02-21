@@ -18,11 +18,11 @@ public class DialogueHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E) && playerEnter && !dMan.dialogueActive)
+        if (Input.GetKeyUp(KeyCode.T) && playerEnter && !dMan.dialogueActive)
         {
             dMan.ShowBox(dialogue);
         }
-        else if (Input.GetKeyUp(KeyCode.E) && playerEnter && dMan.dialogueActive)
+        else if (Input.GetKeyUp(KeyCode.T) && playerEnter && dMan.dialogueActive)
         {
             dMan.HideBox();
         }
@@ -44,30 +44,4 @@ public class DialogueHolder : MonoBehaviour
             playerEnter = false;
         }
     }
-
-    // public string dialogue;
-    // private DialogueManager dMan;
-
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-    //     dMan = FindObjectOfType<DialogueManager>();    
-    // }
-
-    // // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
-
-    // void OnTriggerStay2D(Collider2D other)
-    // {
-    //     if(other.gameObject.name == "Bear")
-    //     {
-    //         if (Input.GetKeyUp(KeyCode.E))
-    //         {
-    //             dMan.ShowBox(dialogue);
-    //         }
-    //     }
-    // }
 }
