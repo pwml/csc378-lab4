@@ -37,9 +37,15 @@ public class EatingTrigger : MonoBehaviour
     //     }
     // }
 
-    void OnTriggerEnter2D(Collider2D other){
+    void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.name == "Bear"){
             playerEnter = true;
+        }
+    }
+    
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.name == "Bear") {
+            playerEnter = false;
         }
     }
 }
