@@ -742,6 +742,26 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.31
+--- !u!95 &940340171
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940340166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3a1ebff9b560d4a87b461c647e6d04b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1068209039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,7 +1213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746185020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.6, y: -3.4, z: 0}
+  m_LocalPosition: {x: 73.6, y: -3.4, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 4.0519}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1238,6 +1258,11 @@ MonoBehaviour:
   detectionLayer:
     serializedVersion: 2
     m_Bits: 129
+  detectedObject: {fileID: 0}
+  examineWindow: {fileID: 0}
+  examineImage: {fileID: 0}
+  examineText: {fileID: 0}
+  isExamining: 0
 --- !u!1 &1758696770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,7 +1343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758696770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.6, y: 3.9530005, z: -10}
+  m_LocalPosition: {x: 73.6, y: 3.9530005, z: -10}
   m_LocalScale: {x: 2.4, y: 2.9125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
