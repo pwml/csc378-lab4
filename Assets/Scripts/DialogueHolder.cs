@@ -8,6 +8,7 @@ public class DialogueHolder : MonoBehaviour
     public string dialogue;
     private DialogueManager dMan;
     private bool playerEnter;
+    public AudioSource Growl;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class DialogueHolder : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.T) && playerEnter && !dMan.dialogueActive)
         {
             dMan.ShowBox(dialogue);
+            Growl.Play();
         }
         else if (Input.GetKeyUp(KeyCode.T) && playerEnter && dMan.dialogueActive)
         {

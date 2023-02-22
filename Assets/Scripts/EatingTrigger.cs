@@ -11,10 +11,13 @@ public class EatingTrigger : MonoBehaviour
     // public UnityEvent eatingEvent;
     private bool playerEnter;
 
+    public AudioSource Eating;
+
     void Update() {
         // print(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0));
         if (Input.GetKeyDown(KeyCode.E) && playerEnter){
             animator.SetTrigger("isBeingEaten");
+            Eating.Play();
             // try {
             //     print("Event triggers.");
             //     eatingEvent.Invoke();
@@ -40,6 +43,7 @@ public class EatingTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.name == "Bear"){
             playerEnter = true;
+
         }
     }
     

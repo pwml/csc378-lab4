@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
 
+    public AudioSource Jumping;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +27,11 @@ public class PlayerMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal") * speed;
 
         animator.SetFloat("speed", Mathf.Abs(horizontal));
-        
+
         if (Input.GetButtonDown("Jump") && isGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             animator.SetBool("isJumping", true);
+            Jumping.Play();
         }
 
         // if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f){
