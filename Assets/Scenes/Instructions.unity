@@ -770,20 +770,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Left Arrow - move left
+  m_text: 'A young brown bear only knows sleeping, being fed, and Mom. It is time
+    to go out into the world and discover if there are other things that exist outside
+    of the den. Running away from home, what will the young brown bear discover without
+    the protection of the den and Mom?
 
-    Right Arrow - move right
+
+    Left Arrow - move left
+
+    Right Arrow
+    - move right
 
     Space - Jump
 
-    E
-    - Eat
+    E - Eat
 
-    T - Interact with object
-
-
-    Goal of the game: To explore the world
-    and interact with all the different things and animals.'
+    T - Interact with object'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
