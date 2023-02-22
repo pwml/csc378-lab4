@@ -1012,6 +1012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 763325215}
+  gameObject: {fileID: 763325211}
   Eating: {fileID: 465539041}
 --- !u!1001 &365733060
 PrefabInstance:
@@ -1895,6 +1896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 732112958}
+  gameObject: {fileID: 732112954}
   Eating: {fileID: 465539041}
 --- !u!1001 &922957966
 PrefabInstance:
@@ -2838,6 +2840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1867976651}
+  gameObject: {fileID: 0}
   Eating: {fileID: 465539041}
 --- !u!4 &1454548259 stripped
 Transform:
@@ -3575,6 +3578,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5081243109583599807, guid: 8fc4b52d082cd4fe4b9da7b59f2851af, type: 3}
   m_PrefabInstance: {fileID: 1715423049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1716599112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3427736556281313855, guid: f206a91eadbbb4251beacabc35d0f474, type: 3}
+  m_PrefabInstance: {fileID: 46251840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1716599116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716599112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676a09622fb2940f6bca50e1049d14aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1694254298}
+  gameObject: {fileID: 1694254297}
+  Eating: {fileID: 465539041}
 --- !u!1 &1727391655
 GameObject:
   m_ObjectHideFlags: 0
@@ -4760,6 +4783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 207878091}
+  gameObject: {fileID: 0}
   Eating: {fileID: 465539041}
 --- !u!1 &1979085919 stripped
 GameObject:
@@ -4779,6 +4803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 940340171}
+  gameObject: {fileID: 940340166}
   Eating: {fileID: 465539041}
 --- !u!1001 &1992479831
 PrefabInstance:
@@ -4978,79 +5003,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f206a91eadbbb4251beacabc35d0f474, type: 3}
---- !u!1 &2043576354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2043576355}
-  - component: {fileID: 2043576357}
-  - component: {fileID: 2043576356}
-  m_Layer: 0
-  m_Name: Salmon Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2043576355
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043576354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1694254303}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2043576356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043576354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 676a09622fb2940f6bca50e1049d14aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1694254298}
-  Eating: {fileID: 465539041}
---- !u!61 &2043576357
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043576354}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0034376383}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.26434827}
-  m_EdgeRadius: 0
 --- !u!1001 &2049422744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5409,6 +5361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 991312253}
+  gameObject: {fileID: 991312252}
   Eating: {fileID: 465539041}
 --- !u!1001 &2109331195
 PrefabInstance:
